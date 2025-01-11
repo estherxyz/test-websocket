@@ -14,7 +14,6 @@ public class HelloController {
 
     @GetMapping("/hello")
 	public String hello() {
-		socketHandler.sendMessageToUser("u123", "hello");
 
 		return "Greetings from Spring Boot!";
 	}
